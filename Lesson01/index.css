@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    position: relative;
+
+}
+.burger_menu{
+
+}
+.header{
+    display: flex;
+    align-items: flex-start;
+    height: 70px;
+    background-color: #F1F1F1;
+
+}
+
+.info{
+    position: absolute;
+    height: 40px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+    background: #D8BF95;
+    border-radius: 0px;
+}
+
+.pre_info{
+    background-color: #D8BF95;
+    text-align: center;
+    height: 20px;
+}
+.logo{
+    position: absolute;
+    top: 35px;
+    left: 44%;
+
+
+}
+.menu_list, .menu2_list  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu2_list{
+    margin-left:570px;
+}
+ul{
+    list-style: none;
+
+}
+.menu_item, .menu2_item{
+    margin: 30px 40px;
+
+
+}
+
+.menu_item a, .menu2_item a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+.menu2_item p{
+    color: #C4C4C4;
+}
+
+section div {
+
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+}
+
+section div img{
+    width: 100%;
+    align-self: center;
+}
+.kindof_jewelry{
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+font-size: 14px;
+    color: #FFFFFF;
+
+
+}
+.kindof_jewelry2{
+    position: absolute;
+    bottom: 28px;
+    right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+width: 100%;
+
+}
+
+.body_title{
+    display: block;
+    width: 620px;
+    height: 240px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 43px;
+    margin-top: 37px;
+    margin-left: 64px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+align-items: start;
+    padding-bottom: 30px;
+    width: 300px;
+}
+.cards_about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 64px;
+    margin-right: 64px;
+
+}
+
+.cards_about img{
+    width: 233px;
+    height: 233px;
+    margin: 0 100px;
+}
+.card p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding:20px 0px;
+
+}
+
+
+
+
+.learn_more{
+
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+margin-top: 15px;
+    margin-left: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.body_info p{
+padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 99px 0px 0 20px;
+    background-color: #F1F1F1;
+}
+.footer__links {
+    display: flex;
+    margin-bottom: 94px;
+}
+.links-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+.links-wrapper.right {
+    justify-content: space-between;
+    margin-left: 0 ;
+}
+.links-col {
+    min-width: 200px;
+}
+.links-col--headless {
+    margin-top: 46px;
+}
+.links-title {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 21px;
+}
+.links-list {
+    font-size: 16px;
+    line-height: 20px;
+}
+.links-list > li {
+    margin-bottom: 10px;
+    max-width: 126px;
+}
+
+.links-list > li > a {
+    text-decoration: none;
+    color: black;
+    transition: color .2s, text-shadow .2s;
+}
+.links-list > li > a:hover {
+    color: #D8BF95;
+    text-shadow:0 0 1px 1px rgba(75, 75, 75, 0.5)
+}
+
+
+.footer__social {
+    display: flex;
+    height: 74px;
+}
+
+.footer__content {
+    width: 100%;
+}
+.social-links {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.footer__icons img{
+    width: 30px;
+    height: 30px;
+}
+.icons-title {
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+
+.lang-buttons {
+    margin-bottom: 34px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.lang-button--disabled {
+    color: #C4C4C4;
+}
+
+.footer-rights {
+    padding-bottom: 34px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+
+}
+
+.footer-rights > span {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9B9B9B;
+}
+@media screen and (min-width: 1920px){
+   .header{
+       height: 80px;
+   }
+    .menu2_list{
+        margin-left:1000px;
+    }
+    .menu_item a, .menu2_item a{
+        text-decoration: none;
+        font-family: Roboto, SansSerif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-transform: uppercase;
+
+        color: #000000;
+
+    }
+    .menu2_item p{
+        color: #C4C4C4;
+        font-family: Roboto, SansSerif;
+        font-size: 30px;
+        font-style: normal;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+
+    }
+
+    .body_title{
+        display: block;
+        width: 920px;
+        height: 100px;
+        font-family: Roboto,SansSerif;
+        font-style: normal;
+        font-size: 53px;
+        margin-top: 37px;
+        margin-left: 64px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-bottom: 10px;
+        width: 400px;
+    }
+    .cards_about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 95px;
+        margin-right: 95px;
+        margin-top: 200px;
+    }
+
+    .cards_about img{
+        width: 333px;
+        height: 333px;
+        margin: 0 100px;
+    }
+    .card p{
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding:20px 0px;
+
+    }
+    .learn_more{
+
+        font-size: 28px;
+    }
+
+
+
+div .kindof_jewelry{
+    top: 150px;
+    left: 20px;
+}
+    div .kindof_jewelry2{
+        top: 900px;
+        right: 20px;
+    }
+
+}
+@media screen and (max-width: 1400px){
+    div .kindof_jewelry{
+        top: 150px;
+        left: 20px;
+    }
+    div .kindof_jewelry2{
+        top: 150px;
+        right: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    .burger_menu {
+        display: block;!important;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 50;
+        left: 5px;
+
+    }
+.burger_menu:before, .burger_menu:after{
+    content: " ";
+    background-color: dimgray;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+    .burger_menu:before{
+        top: 0;
+    }
+    .burger_menu:after{
+        bottom: 0;
+    }
+    .burger_menu span{
+        position: absolute;
+        background-color: dimgray;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+.header_menu{
+
+    position: fixed;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    background-color: rgba(211, 212, 201, 0.5);
+
+}
+.menu_list{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    right: 5px;
+    top: 50px;
+}
+
+.menu_list a, .menu2_list a{
+    font-family: Roboto,SansSerif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.burger_active:before{
+transform: rotate(45deg);
+    top: 9px;
+}
+.burger_active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+.burger_active span{
+    transform: scale(0);
+}
+.header_active{
+    top: 0;
+}
+    section div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+
+    div .kindof_jewelry{
+        top: 150px;
+        left: 20px;
+    }
+    div .kindof_jewelry2{
+        top: 900px;
+        right: 20px;
+    }
+
+    .body_title{
+        display: block;
+        width: 520px;
+        height: 190px;
+        font-family: Roboto,SansSerif;
+        font-style: normal;
+        font-size: 33px;
+        margin-top: 37px;
+        margin-left: 44px;
+    }
+
+    .cards_about{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .footer{
+        display: flex;
+        align-items: start;
+flex-direction: column;
+
+        background-color: #F1F1F1;
+    }
+
+
+    .links-wrapper.left{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+    }
+    .links-wrapper.right{
+        justify-content: space-between;
+    }
+
+    .footer__content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+.footer__social{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+
+}
+
+    .lang-button--disabled{
+        margin-left: -45px;
+    }
+
+.footer-rights{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    min-width: 400px;
+
+}
+}
