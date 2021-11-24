@@ -1,0 +1,29 @@
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid dimgray;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    top: 38%;
+    left: 38%;
+
+}
+.initial{
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 150px;
+    border: 1px solid darkgrey;
+}
+.initial:hover{
+    background-color: #a0acad;
+}
+.clickedElem{
+    background-color: #dbc5d7;
+}
+.clickedRelations{
+    background-color: #b4ced1;
+}
