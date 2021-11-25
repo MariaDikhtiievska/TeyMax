@@ -29,13 +29,14 @@ let htmlElements = []   // array of dives
 function create(){
 let wrapper = document.createElement("div")
     wrapper.classList.add("wrapper")
-    wrapper.id = "wrapper"
+    wrapper.setAttribute("id", "wrapper")
     document.getElementsByTagName('body')[0].appendChild(wrapper)
 
 arr.forEach(function (item, index, arr){
    htmlElements[index] = document.createElement("div")
     htmlElements[index].textContent = item.content
-    htmlElements[index].id = item.id
+    htmlElements[index].setAttribute("id",item.id)
+
     htmlElements[index].classList.add("initial")
     document.getElementById("wrapper").appendChild(htmlElements[index])
 
