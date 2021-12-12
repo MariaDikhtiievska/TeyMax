@@ -1,13 +1,13 @@
 const url = 'https://jsonplaceholder.typicode.com/users'
 import Loader from './loader.js';
-let loader = document.getElementById('loaderSlot')
+//let loader = document.getElementById('loaderSlot')
 let download = document.getElementById('fetchBtn')
 let del = document.getElementById('delete')
 let list = document.getElementById('users')
 
 download.addEventListener('click', fetchUser)
-//const  loaderSlot = document.getElementById('loaderSlot')
-//const  loader = new Loader(loaderSlot);
+const  loaderSlot = document.getElementById('loaderSlot')
+const  loader = new Loader(loaderSlot);
 
 
 const generateUser = (users) =>{
@@ -17,8 +17,8 @@ const generateUser = (users) =>{
     }, '')
 }
 function  fetchUser(){
-//loader.show()
-    loader.classList.add('clock')
+loader.show()
+   // loader.classList.add('clock')
     fetch(`${url}`)
         .then(response => response.json())
 
@@ -28,8 +28,8 @@ function  fetchUser(){
         })
         .catch(err => console.log(err))
         .finally(() => {
-            //loader.close()
-            loader.classList.remove('clock')
+            loader.close()
+            //loader.classList.remove('clock')
         })
 }
 

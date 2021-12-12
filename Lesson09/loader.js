@@ -4,31 +4,36 @@ export default class Loader{
     constructor(slot) {
         this.slot = slot;
         this.defineLoader();
-
+console.log(slot)
     }
     defineLoader(){
         const wrapper = document.createElement('div')
         wrapper.classList.add('box')
-        wrapper.innerHTML = `<div class="box"> <div class="hourglass"></div> <p>Hourglass</p> </div>`
+        wrapper.innerHTML = `<div class="box">  </div>`
 
         this.loaderElement = wrapper
-        console.log(wrapper)
+            //console.log(wrapper)
         this.slot.replaceWith(this.loaderElement)
     }
     get active(){
         return this.#active
     }
     set active(value){
-        if (value)
-            return this.loaderElement.classList.add('clock')
-        else
-            return  this.loaderElement.classList.remove('clock')
+        let action = '';
+
+        if (value) action = 'add';
+        else action = 'remove'
+         action = value ? 'add' : 'remove'
+
+        this.loaderElement.classList[action]('clock')
+
+        this.#active = value
     }
 
     show(){
 
         this.active = true
-        console.log(this.loaderElement.classList)
+       // console.log(this.loaderElement.classList)
     }
     close(){
         this.active = false
@@ -38,13 +43,13 @@ export default class Loader{
 
 
 
-/*let loader = document.querySelector('.loader')
+//let loader = document.querySelector('.loader')
 
-window.addEventListener('load',()=>{
-    loader.classList.add('clock')
-    setTimeout(() =>{
-        loader.remove()
-    },200)
-})
+//window.addEventListener('load',()=>{
+  //  loader.classList.add('clock')
+    //setTimeout(() =>{
+      //  loader.remove()
+    //},200)
+//})
 
- */
+
