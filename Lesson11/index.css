@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(45deg, #6a85b6, #bac8e0);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-self: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-right: 30px;
+
+}
+.day{
+border-radius: 10%;
+
+    background-color: #c5cde3;
+    width: 20%;
+    margin-right: 20px;
+}
+.position{
+
+    margin-top: 5% ;
+    margin-left: 43%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #545557;
+
+}
+.find{
+
+}
+.butt{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
