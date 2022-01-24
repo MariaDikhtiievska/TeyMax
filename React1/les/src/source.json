@@ -1,5 +1,6 @@
 [
 	{
+		"id":0,
 		"title": "American writer of",
 		"description": "Lorem ipsum",
 		"published": "2019-10-15T15:32:45.167Z",
@@ -12,6 +13,7 @@
 		]
 	},
 	{
+		"id":1,
 		"title": "Another article",
 		"description": "Lorem ipsum",
 		"published": "2019-10-15T15:32:45.167Z",
@@ -24,6 +26,7 @@
 		]
 	},
 	{
+		"id":2,
 		"title": "Popular article",
 		"description": "Lorem ipsum",
 		"published": "2019-10-15T15:32:45.167Z",
