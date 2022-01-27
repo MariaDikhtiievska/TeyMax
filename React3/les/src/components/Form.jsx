@@ -1,8 +1,10 @@
 import React,{useState} from "react";
 import styles from '../components/form.module.scss'
 import classNames from "classnames";
-import { Component } from 'react'
 import Select from 'react-select'
+
+import { userShema } from "../UserValidation";
+
 
 export function Form (){
     const [name, setName] = useState('')
@@ -21,10 +23,11 @@ export function Form (){
         setSurName(event.target.value)
     }
     function hendleTimeChange(event){
-        setName(event.target.value)
+        setTime(event.target.value)
     }
     function hendleEmailChange(event){
         setEmail(event.target.value)
+        
     }
     function hendleSexChange(event){
         setSex(event.target.value)
@@ -35,15 +38,22 @@ export function Form (){
         setAcception('accepted')
     }
 
-    function Submit(event){
-        console.log(
+    async function Submit(event){
+        event.preventDefault()
+        const Userdata ={
             name,
             SurName,
             email,
             sex,
+            time,
             accepted
-            )
-        event.preventDefault()
+        }
+        console.log(Userdata)
+        const isValid2 = await userShema.isValid(email)
+       // const isValid = await userShema.isValid(Userdata)
+        console.log(isValid2)
+        //const isValid2 = await userShema.isValid(email)
+       
     }
 
     const times = ['1:00','7:00','19:30']
@@ -87,7 +97,7 @@ export function Form (){
                 <input type="checkbox" checked={accepted} onChange={hendleAcceptionChange}></input>
             </label><br/>
         
-            <input type="submit" value="Submit"></input>
+            <input className={styles.button} type="submit" value="Submit"></input>
             </div>
         </form>
     )
