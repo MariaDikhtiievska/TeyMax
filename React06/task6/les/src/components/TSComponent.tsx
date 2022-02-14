@@ -12,6 +12,6 @@ species: task2_source.species,
 created: task2_source.created    
 }
 
-console.log(someone)
+console.log(someone.films)
 
 export default someone
